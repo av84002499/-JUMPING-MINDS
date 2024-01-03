@@ -1,0 +1,13 @@
+
+# Large files.
+.venv
+.vscode/
+
+# Python files
+__pycache__
+
+# Database files
+db.sqlite3
+
+# migrations files.
+migrations 

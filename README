@@ -1,0 +1,37 @@
+Set up Django Project:
+
+Create a new Django project using the django-admin startproject command.
+Set up the Django REST Framework (DRF) in the project by adding 'rest_framework' to the INSTALLED_APPS in settings.py.
+Configure the database settings in settings.py (e.g., using PostgreSQL).
+Optionally, set up Redis for caching if needed.
+Create Models:
+
+Create an Elevator model with fields like status (up, down, stopped), current_floor, etc.
+Create a UserRequest model with fields like source_floor, destination_floor, timestamp, etc.
+Create Serializers:
+
+Create serializers for the Elevator and UserRequest models using Django REST Framework serializers.
+Implement API Views and Viewsets:
+
+Implement API views/viewsets for initializing the elevator system with 'n' elevators.
+Implement API views/viewsets for fetching all requests for a given elevator.
+Implement API views/viewsets for fetching the next destination floor for a given elevator.
+Implement API views/viewsets for fetching if the elevator is moving up or down currently.
+Implement API views/viewsets for saving user requests to the list of requests for an elevator.
+Implement API views/viewsets for marking an elevator as not working or in maintenance.
+Implement API views/viewsets for opening/closing the door.
+Database and Redis Setup:
+
+Set up the PostgreSQL database for the project (if not using the default SQLite).
+Set up Redis (if needed) for caching and improved performance.
+Comments and Documentation:
+
+Add comments throughout the codebase to explain complex logic or functionalities.
+Document the APIs and their usage in the codebase.
+Write clear and descriptive function/class/method docstrings.
+Create a well-structured README.md file with detailed explanations of the project, design decisions, API contracts, and instructions for setting up, deploying, and testing the project.
+Testing and Integration:
+
+Test the APIs thoroughly, covering various edge cases and scenarios.
+Create a short video demonstrating the use of the project and its APIs as expected.
+Submission:
